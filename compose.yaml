@@ -1,8 +1,9 @@
 version: '3.8'
 
+# Services
 services:
 
-    #PHP8.3.0 + Apache + Composer
+    # PHP8.3.0 + Apache + Composer
     app:
         build:
             context: .
@@ -23,7 +24,7 @@ services:
         networks:
             - app-net
 
-    #MySQL
+    # MySQL
     db:
         image: mysql:8.2.0
         container_name: db
@@ -41,12 +42,12 @@ services:
         networks:
             - app-net
 
-#Docker Networks
+# Networks
 networks:
     app-net:
         driver: bridge
 
-#Volumes
+# Volumes
 volumes:
     #app
     app-vol:
