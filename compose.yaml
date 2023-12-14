@@ -15,13 +15,13 @@ services:
             - 443:443
         volumes:
             # Pasta de trabalho
-            - ./html:/var/www/html
+            - app-vol:/var/www/html
             # Logs apache
             - ./docker/php-apache/apache/log:/var/log/apache2
             # php.ini scan this dir for additional .ini files /usr/local/etc/php/conf.d
             - ./docker/php-apache/php/php-parsed.ini:/usr/local/etc/php/conf.d/php-parsed.ini
         networks:
-            - app-001
+            - app-net
 
     #MySQL
     db:
@@ -35,13 +35,30 @@ services:
             MYSQL_ROOT_PASSWORD: vertrigo
         volumes:
             # Base de dados
-            - ./docker/mysql/db:/var/lib/mysql
+            - db-vol:/var/lib/mysql
             # my.cnf não tem necessidade de momentp
             # - ./docker/mysql:/etc
         networks:
-            - app-001
+            - app-net
 
 #Docker Networks
 networks:
-    app-001:
+    app-net:
         driver: bridge
+
+#Volumes
+volumes:
+    #app
+    app-vol:
+        driver: local
+        driver_opts:
+          type: 'none'
+          o: 'bind'
+          device: './html'
+    #db
+    db-vol:
+        driver: local
+        driver_opts:
+          type: 'none'
+          o: 'bind'
+          device: './docker/mysql/db'
