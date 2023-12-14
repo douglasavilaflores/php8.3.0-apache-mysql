@@ -1,0 +1,51 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.tree.indent": 24,
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": false,
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.linkedEditing": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.tslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+    },
+    "workbench.iconTheme": "vs-seti",
+    // "workbench.editor.showTabs": "multiple",
+    "workbench.editor.limit.enabled": false,
+    // "workbench.editor.limit.value": 1,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#008070"
+    },
+    "intelephense.environment.phpVersion": "8.3.0",
+    // "intelephense.diagnostics.undefinedMethods": false,
+    // "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-8.1.10-Win32-vs16-x64\\php.exe",
+    // "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-8.2.10-nts-Win32-vs16-x64\\php.exe",
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "explorer.confirmDelete": true,
+    "explorer.compactFolders": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.trimTrailingWhitespace": true,
+    // https://www.webdeveloperpal.com/2022/02/08/how-to-setup-vscode-with-php-inside-docker/
+    "php.validate.executablePath": "/home/dev/teste/php",
+    // "terminal.integrated.profiles.windows": {
+    //     "laragon": {
+    //         "path": "${env:windir}\\System32\\cmd.exe",
+    //         "args": ["/k", "C:\\laragon\\bin\\cmder\\vendor\\bin\\vscode_init.cmd"]
+    //   }
+    // },
+    // "terminal.integrated.defaultProfile.windows": "laragon"
+}

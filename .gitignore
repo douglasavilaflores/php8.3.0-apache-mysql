@@ -1,0 +1,13 @@
+# ignore all logs
+*.log
+
+# ignore db files
+docker/mysql/db/*
+!docker/mysql/db/.daf
+
+# ignore html files
+html/*
+!html/index.php
+
+# https://www.pluralsight.com/guides/how-to-use-gitignore-file
+# https://www.atlassian.com/br/git/tutorials/saving-changes/gitignore
