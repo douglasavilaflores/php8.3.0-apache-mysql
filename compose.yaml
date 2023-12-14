@@ -49,14 +49,14 @@ networks:
 
 # Volumes
 volumes:
-    #app
+    # app
     app-vol:
         driver: local
         driver_opts:
           type: 'none'
           o: 'bind'
           device: './html'
-    #db
+    # db
     db-vol:
         driver: local
         driver_opts:
